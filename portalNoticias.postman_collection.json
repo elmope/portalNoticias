@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "2e9b0754-1487-41e2-b771-d7e926bb28ad",
+		"name": "portalNoticias",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get weather",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "somePassword",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "someUser",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7071/portalNoticias/getWeatherofCali",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"portalNoticias",
+						"getWeatherofCali"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get log",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7071/portalNoticias/getLog",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"portalNoticias",
+						"getLog"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get news",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "somePassword",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "someUser",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7071/portalNoticias/getNews",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"portalNoticias",
+						"getNews"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "somePassword",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "someUser",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
